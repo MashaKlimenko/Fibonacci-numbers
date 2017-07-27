@@ -16,15 +16,15 @@ document.write('First method with use loop : ' + num);
 document.write('<br>');
 
 //спосіб 2
-function fibonacchi(n) {
-    return n <= 1 ? n : fibonacchi(n - 1) + fibonacchi(n - 2);
+function fibonacci(n) {
+    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 }
-let newNumber = fibonacchi(num1);
+let newNumber = fibonacci(num1);
 document.write('Second method with use recursion : ' + newNumber);
 document.write('<br>');
 
 //спосіб 3
-var fibonacchiArray = [];
+var fibonacciArray = [];
 function calcFib(num1) {
     let n1 = 1;
     let n2 = 1;
@@ -35,7 +35,7 @@ function calcFib(num1) {
     }
     return n2;
 }
-fibonacchiArray.push(+num1);
+fibonacciArray.push(+num1);
 
 let newF = calcFib(num1);
 document.write('Third method with use array : ' + newF);
