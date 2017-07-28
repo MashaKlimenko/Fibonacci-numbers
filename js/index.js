@@ -1,4 +1,4 @@
-//спосіб 1
+//method with use loop
 let num1 = parseFloat(prompt("Enter number"));
 
 function fibNumber(n) {
@@ -15,7 +15,7 @@ let num = fibNumber(num1);
 document.write('First method with use loop : ' + num);
 document.write('<br>');
 
-//спосіб 2
+//method with use recursion
 function fibonacci(n) {
     return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
 }
@@ -23,7 +23,7 @@ let newNumber = fibonacci(num1);
 document.write('Second method with use recursion : ' + newNumber);
 document.write('<br>');
 
-//спосіб 3
+//method with use array
 var fibonacciArray = [];
 function calcFib(num1) {
     let n1 = 1;
